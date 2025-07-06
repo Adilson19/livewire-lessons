@@ -6,11 +6,12 @@ use Livewire\Component;
 
 class HelloWorld extends Component
 {
+    public $name = 'Adelino Manuel';
+    public $salutation = 'Hello';
+    public $color = 'white';
+    public $salutations = ['Hello', 'Bye Bye'];
     public function render()
     {
-        return view('livewire.hello-world',[
-            'name' => 'Adelino',
-            'randomNumber' => ''. rand(0, 99)
-        ]);
+        return view('livewire.hello-world');
     }
 }
