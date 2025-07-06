@@ -8,7 +8,9 @@
     @livewireStyles
 </head>
 <body>
-    <h1>Hello World!</h1>
+    <h1>Página do blade</h1>
+    <livewire:hello-world />
+    <livewire:hello-world />
 
     @livewireScripts
 </body>
