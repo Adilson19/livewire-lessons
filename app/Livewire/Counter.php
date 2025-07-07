@@ -30,7 +30,11 @@ class Counter extends Component
 
     public function decrement()
     {
-        $this->number  = $this->number - 1;
+        // Ele vai decrementar ate que seja maior do que 0
+        // Se for menor que 0, ele nao vai decrementar
+        if($this-> number >0){
+            $this->number  = $this->number - 1;
+        }
     }
 }
  
