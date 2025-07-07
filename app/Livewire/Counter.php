@@ -23,7 +23,7 @@ class Counter extends Component
     public function increment()
     {
         // Ele vai incrementar ate que que seja menor do que 5
-        if($this->number < 5){
+        if($this->number < 50){
             $this->number = $this->number + 1;
         }
     }

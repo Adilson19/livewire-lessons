@@ -4,6 +4,9 @@
     {{-- <button wire:mouseenter="increment($event.target.innerText)">1</button>
     <button wire:click="increment($event.target.innerText)">2</button> --}}
 
-    <button wire:click="increment">+</button>
-    <button wire:click="decrement">-</button>
+    <input wire:keydown.a.prevent="increment" wire:keydown.d.prevent="decrement" />
+
+
+    <button wire:mouseover="increment">mouse over</button>
+    <button wire:mouseout="decrement">mouse out</button>
 </div>
