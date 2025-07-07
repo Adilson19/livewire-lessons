@@ -13,15 +13,10 @@ class Counter extends Component
 
     public $number = 0;
 
-    public function incrementOne(){
-        if($this->number == 2){
-            $this->number = -5;
-            return;
-        }
-        $this->number = $this->number + 1;
-    }
-    public function incrementTwo(){
-        $this->number = $this->number + 2;
+    //  Inves de duas funcoes, podemos ter uma unica funcao que recebe o valor a ser incrementado
+    public function increment($quantity)
+    {
+        $this->number = $this->number + $quantity;
     }
 }
  
