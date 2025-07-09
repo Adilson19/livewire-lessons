@@ -8,13 +8,13 @@
     @livewireStyles
 </head>
 <body>
-    <h1>Página do blade</h1>
-    <livewire:user user='Adelino Manuel' age="25"/>
+    {{-- <h1>Página do blade</h1> --}}
+    <livewire:user/>
 
     {{-- Renderizando um outro livewire --}}
-    @livewire('user', [
+    {{-- @livewire('user', [
         'user' => 'Adelino 3'
-    ])
+    ]) --}}
 
     @livewireScripts
 </body>
