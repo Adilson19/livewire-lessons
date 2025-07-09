@@ -9,7 +9,7 @@
 </head>
 <body>
     <h1>Página do blade</h1>
-    <livewire:counter />
+    <livewire:user user='Adelino Sousa'/>
 
     @livewireScripts
 </body>
