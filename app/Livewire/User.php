@@ -2,6 +2,7 @@
 
 namespace App\Livewire;
 
+use Illuminate\Http\Request;
 use Livewire\Component;
 
 class User extends Component
@@ -12,7 +13,8 @@ class User extends Component
         return view('livewire.user');
     }
     // Este metodo eh chamado quando o componente eh inicializado
-    public function mount($user)
+    // Com o parametro Request, podemos acessar das via metodos GET ou POST
+    public function mount(Request $request, $user)
     {
         $this->name = $user;
     }

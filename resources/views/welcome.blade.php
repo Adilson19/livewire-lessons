@@ -9,7 +9,12 @@
 </head>
 <body>
     <h1>Página do blade</h1>
-    <livewire:user user='Adelino Sousa'/>
+    <livewire:user user='Adelino Manuel' age="25"/>
+
+    {{-- Renderizando um outro livewire --}}
+    @livewire('user', [
+        'user' => 'Adelino 3'
+    ])
 
     @livewireScripts
 </body>
